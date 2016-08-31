@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>PRG-147 Changing Images</title>
+    <meta charset="utf-8">
+
+    <!-- This program uses images as buttons. When clicked the large image changes to that of the button icon -->
+    <meta name="description" content="MCC PRG-147 JavaScript Functions by Phyllis Torres">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- Link to Google Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+
+<!-- The initialize function loads the caption for the first image -->
+
+<body onload="initialize()">
+
+    <header>
+
+        <div class="container">
+
+            <div class="col-1 col-m-12">
+            </div>
+
+            <div class="col-10 col-m-12">
+
+                <h1>Ever Wonder What They Are Really Thinking?</h1>
+
+            </div>
+
+            <div class="col-1 col-m-12">
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <script>
+            function initialize() {
+                var text = "";
+
+                document.getElementById("greeting").innerHTML = "So, Ralphie, when are Moe and Curly gonna show so we can do the 'See No Evil' act?";
+            }
+        </script>
+
+        <div class="container">
+            <div class="col-1 col-m-12">
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/chimps.jpg" alt="chimpanzees sitting next to each other" style="width:200px; height:50px;" onclick="change01()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/littlepiggies.jpg" alt="two young pigs at a fence" style="width:200px; height:50px;" onclick="change02()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/threetoads.jpg" alt="three toads pile on each other" title="Menage a frog?" style="width:200px; height:50px;" onclick="change03()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/catvampire.jpg" alt="Cat doing a vampire impersonation" style="width:200px; height:50px;" onclick="change04()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/botswanakhudu.jpg" alt="Khudu with curly antlers" style="width:200px; height:50px;" onclick="change05()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/ifpigscouldfly.jpg" alt="bird riding on the back of a swimming pig" style="width:200px; height:50px;" onclick="change06()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/elephants.jpg" alt="Elephants with tangled tusks" style="width:200px; height:50px;" onclick="change07()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/bittern.jpg" alt="bird on a floating log" style="width:200px; height:50px;" onclick="change08()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/bugs.jpg" alt="bugs doing heimlich maneuver" style="width:200px; height:50px;" onclick="change09()"></a>
+            </div>
+
+            <div class="col-1 col-m-12 ">
+                <a href="#large"><img src="images/horses.jpg" alt="crazy looking horses" style="width:200px; height:50px;" onclick="change10()"></a>
+            </div>
+
+            <div class="col-1 col-m-12">
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="col-1 col-m-12">
+            </div>
+
+            <div class="col-8 col-m-12">
+
+                <img id="large" src="images/chimps.jpg" alt="chimpanzees sitting next to each other">
+
+            </div>
+
+            <div class="col-2 col-m-12">
+                <p id="greeting"></p>
+            </div>
+
+            <div class="col-1 col-m-12">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="col-12 col-m-12">
+                <p style="font-size:1em; text-align:center;">Copyright 2016 ~ Phyllis Torres</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>
